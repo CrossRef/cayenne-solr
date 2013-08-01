@@ -2,8 +2,8 @@ FROM centos:6.4
 ADD . /solr
 EXPOSE 8983:8983
 
-# Install java
-RUN curl "http://download.oracle.com/otn-pub/java/jdk/7u25-b15/jdk-7u25-linux-x64.rpm" > jdk.rpm
-RUN rpm -Uvh jdk.rpm
+RUN iptables -A INPUT -p tcp -dport 8983 -j ACCEPT
 
-CMD cd /solr; java -Xmx10g -jar start.jar
+RUN yum install -y java-1.7.0-openjdk 
+
+CMD java -Xmx10g -jar start.jar
