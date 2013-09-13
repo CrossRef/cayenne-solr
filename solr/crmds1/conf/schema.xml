@@ -4,6 +4,7 @@
     <fieldType name="string" class="solr.StrField" sortMissingLast="true" omitNorms="true"/>
     <fieldType name="integer" class="solr.IntField"/>
     <fieldType name="date" class="solr.TrieDateField"/>
+    <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true" omitNorms="true"/>
 
     <fieldType name="text" class="solr.TextField" positionIncrementGap="100">
       <analyzer type="index">
@@ -46,6 +47,7 @@
     <field name="funder_doi" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="supplementary_id" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="prefix" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
+    <field name="owner_prefix" type="string" indxed="true" stored="true" required="true" multiValued="false"/>
 
     <!-- Timestamps -->
     <field name="deposited_at" type="date" indexed="true" stored="true" required="true" multiValued="false"/>
@@ -65,6 +67,8 @@
     <field name="oa_status" type="string" indexed="true" stored="true" required="false"/>
     <field name="funder_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="source" type="string" indexed="true" stored="true" required="false"/>
+    <field name="archive" type="string" indexed="true" stored="true" required="false"/>
+    <field name="references" type="boolean" indexed="true" stored="true" required="true"/>
 
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
@@ -84,6 +88,10 @@
     <field name="hl_description" type="stringTokens" indexed="true" stored="true" multiValued="false" required="false"/>
 
     <!-- Other stored fields -->
+
+    <field name="full_text_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="full_text_url" type="string" indexed="true" stored="true" required="false" mutliValued="true"/>
+    <field name="license_url" type="string" indexed="true" stored="true" required="false" multivalued="true"/>
     <field name="first_author_given" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="mongo_id" type="string" indexed="false" stored="true" required="false"/>
