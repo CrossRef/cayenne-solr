@@ -89,6 +89,7 @@
 
     <!-- Other stored fields -->
 
+    <field name="cited_by_count" type="integer" indexed="true" stored="true" required="true"/>
     <field name="full_text_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="full_text_url" type="string" indexed="true" stored="true" required="false" mutliValued="true"/>
     <field name="license_url" type="string" indexed="true" stored="true" required="false" multivalued="true"/>
