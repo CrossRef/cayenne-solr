@@ -69,6 +69,7 @@
     <field name="source" type="string" indexed="true" stored="true" required="false"/>
     <field name="archive" type="string" indexed="true" stored="true" required="false"/>
     <field name="references" type="boolean" indexed="true" stored="true" required="true"/>
+    <field name="publisher" type="string" indexed="true" stored="true" required="false"/>
 
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
