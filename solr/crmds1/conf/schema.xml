@@ -112,8 +112,8 @@
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="mongo_id" type="string" indexed="false" stored="true" required="false"/>
     <field name="from_file" type="string" indexed="false" stored="true" required="false"/>
-    <field name="month" type="integer" indexed="false" stored="true" required="false"/>
-    <field name="day" type="integer" indexed="false" stored="true" required="false"/>
+    <field name="month" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="day" type="integer" indexed="true" stored="true" required="false"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
