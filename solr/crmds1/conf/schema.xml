@@ -33,9 +33,14 @@
 	<filter class="solr.LowerCaseFilterFactory"/>
       </analyzer>
     </fieldType>
+
+    <fieldType name="random" class="solr.RandomSortField"/>
   </types>
 
   <fields>
+    <!-- Random sorting -->
+    <dynamicField name="random_*" type="random" indexed="true" stored="false"/>
+
     <!-- Unique key -->
     <field name="doi_key" type="string" indexed="true" stored="true" required="true"/>
 
