@@ -108,10 +108,13 @@
     <!-- Order and cardinality of full_text_* must match. -->
     <field name="full_text_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="full_text_url" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="full_text_version" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Order and cardinality of license_* must match. -->
     <field name="license_url" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="license_start" type="date" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="license_version" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="license_delay" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <field name="first_author_given" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
