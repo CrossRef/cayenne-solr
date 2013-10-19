@@ -58,7 +58,7 @@
     <field name="contributor_given_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_family_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_suffix" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="contributor_orcid" type="string" indexed="true" stored="true" required="false" multiValied="true"/>
+    <field name="contributor_orcid" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Timestamps -->
