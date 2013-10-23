@@ -57,6 +57,7 @@
             <Set name="maxIdleTime">50000</Set>
             <Set name="lowResourceMaxIdleTime">1500</Set>
             <Set name="statsOn">false</Set>
+	    <Set name="requestHeaderSize">102400</Set>
           </New>
       </Arg>
     </Call>
