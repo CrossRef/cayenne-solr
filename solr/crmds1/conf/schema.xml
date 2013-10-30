@@ -110,12 +110,21 @@
     <field name="full_text_url" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="full_text_version" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
+    <!-- map different parts of full text link info together to support queries on compound data. -->
+    <dynamicField name="full_text_type_to_version_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+
     <!-- Order and cardinality of license_* must match. -->
     <field name="license_url" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="license_start" type="date" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="license_version" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="license_delay" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
 
+    <!-- dynamic fields mapping different parts of licenses together. poor man's relational data  -->
+    <dynamicField name="license_version_to_delay_*" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="license_url_to_delay_*" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="license_url_to_version_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="license_url_and_version_to_delay_*" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
+    
     <field name="first_author_given" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="mongo_id" type="string" indexed="false" stored="true" required="false"/>
