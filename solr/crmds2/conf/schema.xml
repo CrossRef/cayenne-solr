@@ -2,7 +2,7 @@
 <schema name="cr-search" version="1.4">
   <types>
     <fieldType name="string" class="solr.StrField" sortMissingLast="true" omitNorms="true"/>
-    <fieldType name="integer" class="solr.IntField"/>
+    <fieldType name="integer" class="solr.TrieIntField"/>
     <fieldType name="date" class="solr.TrieDateField"/>
     <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true" omitNorms="true"/>
 
