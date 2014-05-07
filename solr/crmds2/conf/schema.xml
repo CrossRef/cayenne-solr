@@ -113,6 +113,7 @@
     <!-- Other stored fields -->
 
     <field name="cited_by_count" type="integer" indexed="true" stored="true" required="true"/>
+    <field name="citation_count" type="integer" indexed="true" stored="true" required="true"/>
 
     <!-- Order and cardinality of full_text_* must match. -->
     <field name="full_text_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
