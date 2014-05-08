@@ -65,8 +65,8 @@
     <field name="update_policy" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
 
     <field name="update_doi" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="update_type" type="string" indexed="true" stored="true" required="false" multiValied="true"/>
-    <field name="update_label" type="string" indexed="true" stored="true" required="false" multiValied="true"/>
+    <field name="update_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="update_label" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="update_date" type="date" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Timestamps -->
