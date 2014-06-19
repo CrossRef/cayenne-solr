@@ -119,9 +119,13 @@
     <field name="full_text_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="full_text_url" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="full_text_version" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="full_text_application" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- map different parts of full text link info together to support queries on compound data. -->
     <dynamicField name="full_text_type_version_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="full_text_type_application_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="full_text_application_version_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="full_text_type_application_version_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Order and cardinality of license_* must match. -->
     <field name="license_url" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
