@@ -142,6 +142,7 @@
     <field name="award_funder_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="award_funder_doi" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="award_number" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="award_number_display" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <dynamicField name="award_funder_doi_number_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
