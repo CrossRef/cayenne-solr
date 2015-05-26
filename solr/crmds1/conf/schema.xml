@@ -95,6 +95,7 @@
     <field name="archive" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="references" type="boolean" indexed="true" stored="true" required="true"/>
     <field name="publisher" type="string" indexed="true" stored="true" required="false"/>
+    <field name="affiliation" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
@@ -155,6 +156,9 @@
     <dynamicField name="license_url_delay_*" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
     <dynamicField name="license_url_version_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <dynamicField name="license_url_version_delay_*" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
+
+    <!-- dynamic fields mapping contributor indices to lists of affiliations -->
+    <dynamicField name="contributor_affiliations_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     
     <field name="first_author_given" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
