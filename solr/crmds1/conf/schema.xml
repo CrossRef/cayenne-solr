@@ -163,14 +163,14 @@
     <dynamicField name="contributor_affiliations_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- dynamic fields for a list of assertions -->
-    <dynamicField name="assertion_name_*" type="string" indexed="false" stored="true" required="false" miltiValued="true"/>
-    <dynamicField name="assertion_label_*" type="string" indexed="false" stored="true" required="false" miltiValued="true"/>
-    <dynamicField name="assertion_group_name_*" type="string" indexed="false" stored="true" required="false" miltiValued="true"/>
-    <dynamicField name="assertion_group_label_*" type="string" indexed="false" stored="true" required="false" miltiValued="true"/>
-    <dynamicField name="assertion_url_*" type="string" indexed="false" stored="true" required="false" miltiValued="true"/>
-    <dynamicField name="assertion_value_*" type="string" indexed="false" stored="true" required="false" miltiValued="true"/>
-    <dynamicField name="assertion_order_*" type="integer" indexed="false" stored="true" required="false" miltiValued="true"/>
-    <dynamicField name="assertion_explanation_url_*" type="string" indexed="false" stored="true" required="false" miltiValued="true"/>
+    <dynamicField name="assertion_name_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="assertion_label_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="assertion_group_name_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="assertion_group_label_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="assertion_url_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="assertion_value_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="assertion_order_*" type="integer" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="assertion_explanation_url_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
 
     <field name="first_author_given" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
