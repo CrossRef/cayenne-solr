@@ -75,6 +75,7 @@
     <field name="update_by_date" type="date" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Timestamps -->
+    <field name="first_deposited_at" type="date" indexed="true" stored="true" required="true" multiValued="false"/>
     <field name="deposited_at" type="date" indexed="true" stored="true" required="true" multiValued="false"/>
     <field name="indexed_at" type="date" indexed="true" stored="true" required="true" multiValued="false"/>
 
