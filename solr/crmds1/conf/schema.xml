@@ -180,6 +180,14 @@
     <field name="from_file" type="string" indexed="false" stored="true" required="false"/>
     <field name="month" type="integer" indexed="true" stored="true" required="false"/>
     <field name="day" type="integer" indexed="true" stored="true" required="false"/>
+
+    <field name="online_year" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="online_month" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="online_day" type="integer" indexed="true" stored="true" required="false"/>
+    
+    <field name="print_year" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="print_month" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="print_day" type="integer" indexed="true" stored="true" required="false"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
