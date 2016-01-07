@@ -75,6 +75,13 @@
     <field name="update_by_label" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="update_by_date" type="date" indexed="true" stored="true" required="false" multiValued="true"/>
 
+    <!-- Structured Clinical Trial Number information -->
+    <field name="clinical_trial_number_ctn" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="clinical_trial_number_registry" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="clinical_trial_number_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <!-- Proxy value used for search -->
+    <field name="clinical_trial_number_proxy" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+
     <!-- Timestamps -->
     <field name="first_deposited_at" type="date" indexed="true" stored="true" required="true" multiValued="false"/>
     <field name="deposited_at" type="date" indexed="true" stored="true" required="true" multiValued="false"/>
