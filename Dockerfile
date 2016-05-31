@@ -1,9 +1,7 @@
-FROM centos:6.4
-ADD . /solr
-EXPOSE 8983:8983
+FROM solr:6
 
-RUN iptables -A INPUT -p tcp --dport 8983 -j ACCEPT
+COPY ./solr/crmds1 /opt/solr-core-crmds1
 
-RUN yum install -y java-1.7.0-openjdk 
+RUN mkdir -p /opt/solr/server/solr/crmds1
+RUN cp -r /opt/solr-core-crmds1/* /opt/solr/server/solr/crmds1
 
-CMD cd /solr; java -Xmx10g -jar start.jar

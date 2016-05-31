@@ -4,6 +4,7 @@
   <luceneMatchVersion>LUCENE_CURRENT</luceneMatchVersion>
   <directoryFactory name="DirectoryFactory" class="solr.NIOFSDirectoryFactory"/>
 
+  <schemaFactory class="ClassicIndexSchemaFactory"/>
 
   <!-- Index Defaults
 
@@ -15,7 +16,7 @@
     -->
   <indexConfig>
     <useCompoundFile>false</useCompoundFile>
-    <mergeFactor>3</mergeFactor>
+    <!-- <mergeFactor>3</mergeFactor> -->
     <!-- Sets the amount of RAM that may be used by Lucene indexing
          for buffering added documents and deletions before they are
          flushed to the Directory.  -->
@@ -44,7 +45,7 @@
 
          This is not needed if lock type is 'none' or 'single'
      -->
-    <unlockOnStartup>false</unlockOnStartup>
+    <!-- <unlockOnStartup>false</unlockOnStartup> -->
     
     <!-- If true, IndexReaders will be reopened (often more efficient)
          instead of closed and then opened.
@@ -356,15 +357,7 @@
       -->
   </requestHandler>
 
-  <!-- Admin Handlers
-
-       Admin Handlers - This will register all the standard admin
-       RequestHandlers.  
-    -->
-  <requestHandler name="/admin/" 
-                  class="solr.admin.AdminHandlers" />
-
-  <requestHandler name="/update" class="solr.XmlUpdateRequestHandler">
+  <requestHandler name="/update" class="solr.UpdateRequestHandler">
   </requestHandler>
 
   <!-- ping/healthcheck -->
