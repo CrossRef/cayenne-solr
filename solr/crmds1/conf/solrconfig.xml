@@ -2,8 +2,6 @@
 <config>
   <abortOnConfigurationError>${solr.abortOnConfigurationError:true}</abortOnConfigurationError>
   <luceneMatchVersion>LUCENE_CURRENT</luceneMatchVersion>
-  <directoryFactory name="DirectoryFactory" class="solr.NIOFSDirectoryFactory"/>
-
 
   <!-- Index Defaults
 
