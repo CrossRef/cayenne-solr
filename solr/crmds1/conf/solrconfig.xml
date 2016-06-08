@@ -111,18 +111,18 @@
     <maxBooleanClauses>1024</maxBooleanClauses>
 
     <filterCache class="solr.FastLRUCache"
-                 size="512"
-                 initialSize="512"
+                 size="16384"
+                 initialSize="16384"
                  autowarmCount="0"/>
 
     <queryResultCache class="solr.LRUCache"
-                     size="512"
-                     initialSize="512"
+                     size="16384"
+                     initialSize="16384"
                      autowarmCount="0"/>
 
     <documentCache class="solr.LRUCache"
-                   size="512"
-                   initialSize="512"
+                   size="16384"
+                   initialSize="16384"
                    autowarmCount="0"/>
     
     <enableLazyFieldLoading>true</enableLazyFieldLoading>
