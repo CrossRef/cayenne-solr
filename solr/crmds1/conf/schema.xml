@@ -195,6 +195,9 @@
     <field name="print_year" type="integer" indexed="true" stored="true" required="false"/>
     <field name="print_month" type="integer" indexed="true" stored="true" required="false"/>
     <field name="print_day" type="integer" indexed="true" stored="true" required="false"/>
+
+    <field name="domain_exclusive" type="boolean" indexed="true" stored="true" required="false"/>
+    <field name="domains" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
