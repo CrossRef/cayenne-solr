@@ -160,7 +160,8 @@
 
     <!-- Order and cardinality must match. -->
     <field name="funder_record_doi" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="funder_record_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>      <field name="funder_record_doi_asserted_by" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="funder_record_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="funder_record_doi_asserted_by" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- dynamic fields mapping different parts of licenses together. poor man's relational data  -->
     <dynamicField name="license_version_delay_*" type="integer" indexed="true" stored="true" required="false" multiValued="true"/>
@@ -195,6 +196,22 @@
     <field name="print_year" type="integer" indexed="true" stored="true" required="false"/>
     <field name="print_month" type="integer" indexed="true" stored="true" required="false"/>
     <field name="print_day" type="integer" indexed="true" stored="true" required="false"/>
+    
+    <field name="posted_year" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="posted_month" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="posted_day" type="integer" indexed="true" stored="true" required="false"/>
+    
+    <field name="accepted_year" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="accepted_month" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="accepted_day" type="integer" indexed="true" stored="true" required="false"/>
+
+    <field name="doi_relation_type" type="string" indexed="true" stored="true" required="false"
+		  multiValued="true"/>
+    <field name="doi_relation_doi" type="string" indexed="true" stored="true" required="false"
+		  multiValued="true"/>
+    
+    <dynamicField name="doi_relation_type_*" type="string" indexed="true" stored="true"
+		  required="false" multiValued="true"/>
 
     <field name="domain_exclusive" type="boolean" indexed="true" stored="true" required="false"/>
     <field name="domains" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
