@@ -205,16 +205,10 @@
     <field name="accepted_month" type="integer" indexed="true" stored="true" required="false"/>
     <field name="accepted_day" type="integer" indexed="true" stored="true" required="false"/>
 
-    <field name="doi_relation_type" type="string" indexed="true" stored="true" required="false"
-		  multiValued="true"/>
-    <field name="doi_relation_doi" type="string" indexed="true" stored="true" required="false"
-		  multiValued="true"/>
-    
-    <dynamicField name="doi_relation_type_*" type="string" indexed="true" stored="true"
-		  required="false" multiValued="true"/>
-
     <field name="domain_exclusive" type="boolean" indexed="true" stored="true" required="false"/>
     <field name="domains" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+
+    <field name="abstract" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
