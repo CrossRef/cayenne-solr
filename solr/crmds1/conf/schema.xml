@@ -209,6 +209,7 @@
     <field name="domains" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <field name="abstract" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
+    <field name="abstract_xml" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
