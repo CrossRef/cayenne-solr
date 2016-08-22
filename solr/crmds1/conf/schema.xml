@@ -110,6 +110,7 @@
 
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="hl_short_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_subtitle" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_volume" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="hl_issue" type="stringTokens" indexed="true" stored="true" required="false"/>
@@ -119,6 +120,8 @@
     <field name="hl_translators" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="hl_contributors" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="hl_publication" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="hl_short_publication" type="stringTokens" indexed="true" stored="true" required="false"
+	   multiValued="true"/>
     <field name="hl_year" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="hl_first_page" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="hl_last_page" type="stringTokens" indexed="true" stored="true" required="false"/>
@@ -208,7 +211,7 @@
     <field name="domain_exclusive" type="boolean" indexed="true" stored="true" required="false"/>
     <field name="domains" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
-    <field name="abstract" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
+    <field name="abstract" type="text" indexed="true" stored="true" required="false" multiValued="false"/>
     <field name="abstract_xml" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
   </fields>
 
