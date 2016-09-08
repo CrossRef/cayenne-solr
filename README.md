@@ -5,11 +5,11 @@ A configuration of Solr for the Cayenne loader / API / CrossRef Metadata Search.
 
 ## Run as master
 
-> java -Denable.master=true -Xmx12G -jar start.jar
+> ./bin/solr start -p 8983 -Denable.master=true
 
 ## Run as a replicating slave
 
-> java -Denable.slave=true -Dmaster.url=http://somehost:8983/solr/crmds1 -Xmx12G -jar start.jar
+> ./bin/solr start -p 8983 -Denable.slave=true -Dmaster.url=http://somehost:8983/solr/crmds1
 
 ## Environment
 
