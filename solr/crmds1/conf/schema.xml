@@ -113,6 +113,7 @@
     <field name="hl_short_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_original_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_subtitle" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="hl_group_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="false"/>
     <field name="hl_volume" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="hl_issue" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="hl_authors" type="stringTokens" indexed="true" stored="true" required="false"/>
