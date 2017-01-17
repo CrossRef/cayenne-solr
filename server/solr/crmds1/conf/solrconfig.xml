@@ -95,6 +95,7 @@
 
   <!-- The default high-performance update handler -->
   <updateHandler class="solr.DirectUpdateHandler2">
+    <updateLog/>
   </updateHandler>
 
   <query>
