@@ -44,6 +44,9 @@
     <!-- Unique key -->
     <field name="doi_key" type="string" indexed="true" stored="true" required="true"/>
 
+    <!-- Update log versioning -->
+    <field name="_version_" type="integer" indexed="true" stored="true" required="false"/>
+
     <!-- Fields for matching identifiers -->
     <field name="doi" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
     <field name="issn" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
@@ -189,6 +192,12 @@
     <dynamicField name="assertion_value_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <dynamicField name="assertion_order_*" type="integer" indexed="false" stored="true" required="false" multiValued="true"/>
     <dynamicField name="assertion_explanation_url_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+
+    <!-- dynamic fields for a list of relations -->
+    <dynamicField name="relation_type_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="relation_object_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="relation_object_type_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="relation_object_ns_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
 
     <field name="first_author_given" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
