@@ -39,13 +39,13 @@
 
   <fields>
     <!-- Random sorting -->
-    <dynamicField name="random_*" type="random" indexed="true" stored="false"/>
+    <dynamicField name="random_*" type="random" indexed="true" stored="true"/>
 
     <!-- Unique key -->
     <field name="doi_key" type="string" indexed="true" stored="true" required="true"/>
 
     <!-- Update log versioning -->
-    <field name="_version_" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="_version_" type="integer" indexed="true" stored="true" required="true"/>
 
     <!-- Fields for matching identifiers -->
     <field name="doi" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
@@ -92,10 +92,10 @@
     <field name="indexed_at" type="date" indexed="true" stored="true" required="true" multiValued="false"/>
 
     <!-- Full text search -->
-    <field name="content" type="text" indexed="true" stored="false" required="true"/>
+    <field name="content" type="text" indexed="true" stored="true" required="true"/>
 
     <!-- Full text citation match -->
-    <field name="content_citation" type="text" indexed="true" stored="false" required="true"/>
+    <field name="content_citation" type="text" indexed="true" stored="true" required="true"/>
 
     <!-- Faceting -->
     <field name="type" type="string" indexed="true" stored="true" required="false"/>
