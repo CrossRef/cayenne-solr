@@ -3,6 +3,7 @@
   <types>
     <fieldType name="string" class="solr.StrField" sortMissingLast="true" omitNorms="true"/>
     <fieldType name="integer" class="solr.TrieIntField"/>
+    <fieldType name="long" class="solr.TrieLongField"/>
     <fieldType name="date" class="solr.TrieDateField"/>
     <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true" omitNorms="true"/>
 
@@ -45,7 +46,7 @@
     <field name="doi_key" type="string" indexed="true" stored="true" required="true"/>
 
     <!-- Update log versioning -->
-    <field name="_version_" type="integer" indexed="true" stored="true" required="true"/>
+    <field name="_version_" type="long" indexed="true" stored="true" required="true"/>
 
     <!-- Fields for matching identifiers -->
     <field name="doi" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
