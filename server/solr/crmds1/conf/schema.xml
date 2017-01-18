@@ -137,6 +137,22 @@
     <field name="hl_description" type="stringTokens" indexed="true" stored="true" multiValued="false" required="false"/>
     <field name="hl_publisher" type="stringTokens" indexed="true" stored="true" multiValued="false" required="false"/>
 
+    <!-- Conference event -->
+    <field name="event_name" type="string" indexed="true" stored="true" required="false"/>
+    <field name="event_theme" type="string" indexed="true" stored="true" required="false"/>
+    <field name="event_location" type="string" indexed="true" stored="true" required="false"/>
+    <field name="event_sponsor" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="event_acronym" type="string" indexed="true" stored="true" required="false"/>
+    <field name="event_number" type="string" indexed="true" stored="true" required="false"/>
+    
+    <field name="event_start_year" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="event_start_month" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="event_start_day" type="integer" indexed="true" stored="true" required="false"/>
+
+    <field name="event_end_year" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="event_end_month" type="integer" indexed="true" stored="true" required="false"/>
+    <field name="event_end_day" type="integer" indexed="true" stored="true" required="false"/>
+    
     <!-- Other stored fields -->
 
     <field name="cited_by_count" type="integer" indexed="true" stored="true" required="true"/>
