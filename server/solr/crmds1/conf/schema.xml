@@ -65,6 +65,7 @@
     <field name="contributor_org_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_suffix" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_orcid" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="contributor_orcid_authed" type="boolean" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Structured update information -->
