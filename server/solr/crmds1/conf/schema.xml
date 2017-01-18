@@ -138,11 +138,11 @@
     <field name="hl_publisher" type="stringTokens" indexed="true" stored="true" multiValued="false" required="false"/>
 
     <!-- Conference event -->
-    <field name="event_name" type="string" indexed="true" stored="true" required="false"/>
-    <field name="event_theme" type="string" indexed="true" stored="true" required="false"/>
-    <field name="event_location" type="string" indexed="true" stored="true" required="false"/>
-    <field name="event_sponsor" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="event_acronym" type="string" indexed="true" stored="true" required="false"/>
+    <field name="event_name" type="stringTokens" indexed="true" stored="true" required="false"/>
+    <field name="event_theme" type="stringTokens" indexed="true" stored="true" required="false"/>
+    <field name="event_location" type="stringTokens" indexed="true" stored="true" required="false"/>
+    <field name="event_sponsor" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="event_acronym" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="event_number" type="string" indexed="true" stored="true" required="false"/>
     
     <field name="event_start_year" type="integer" indexed="true" stored="true" required="false"/>
