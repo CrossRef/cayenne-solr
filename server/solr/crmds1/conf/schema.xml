@@ -251,6 +251,26 @@
 
     <field name="abstract" type="text" indexed="true" stored="true" required="false" multiValued="false"/>
     <field name="abstract_xml" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+
+    <!-- citations -->
+    <field name="citation_key" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="citation_doi" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="citation_issn" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_issn_type" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_author" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_issue" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_first_page" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_year" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_isbn" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_isbn_type" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_series_title" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_volume_title" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_edition" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_component" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_article_title" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_standards_body" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_standard_designator" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_unstructured" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
