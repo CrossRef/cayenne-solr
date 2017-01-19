@@ -110,7 +110,7 @@
     <field name="archive" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="references" type="boolean" indexed="true" stored="true" required="true"/>
     <field name="publisher" type="stringTokens" indexed="true" stored="true" required="false"/>
-    <field name="publisher_place" type="stringTokens" indexed="true" stored="true" required="false"/>
+    <field name="publisher_location" type="stringTokens" indexed="true" stored="true" required="false"/>
     <field name="affiliation" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="assertion_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="assertion_group_name" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
