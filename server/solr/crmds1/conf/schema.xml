@@ -267,6 +267,7 @@
     <field name="citation_volume_title" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_edition" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_component" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="citation_volume" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_article_title" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_journal_title" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_standards_body" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
