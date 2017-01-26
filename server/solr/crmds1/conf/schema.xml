@@ -254,7 +254,6 @@
 
     <!-- citations -->
     <field name="citation_key" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="citation_doi" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="citation_issn" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_issn_type" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_author" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
@@ -273,6 +272,9 @@
     <field name="citation_standards_body" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_standard_designator" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="citation_unstructured" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+
+    <!-- Stores the DOI for a particular keyed citation -->
+    <dynamicField name="citation_doi_*" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
