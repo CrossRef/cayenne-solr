@@ -213,11 +213,15 @@
     <dynamicField name="assertion_order_*" type="integer" indexed="false" stored="true" required="false" multiValued="true"/>
     <dynamicField name="assertion_explanation_url_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
 
-    <!-- dynamic fields for a list of relations -->
-    <dynamicField name="relation_type_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
-    <dynamicField name="relation_object_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
-    <dynamicField name="relation_object_type_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
-    <dynamicField name="relation_object_ns_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <!-- relations -->
+    <field name="relation_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="relation_object" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="relation_object_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="relation_object_ns" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    
+    <dynamicField name="relation_type_object_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="relation_type_object_type_object_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <dynamicField name="relation_type_object_type_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
 
     <field name="first_author_given" type="stringTokens" indexed="false" stored="true" required="false"/>
     <field name="first_author_surname" type="stringTokens" indexed="false" stored="true" required="false"/>
