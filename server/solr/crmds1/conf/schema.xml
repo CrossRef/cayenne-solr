@@ -218,7 +218,7 @@
     <field name="relation_object" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="relation_object_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="relation_object_ns" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="relation_claimed_by" type="string" indexed="true" stored="true" required="false" mutliValued="true"/>
+    <field name="relation_claimed_by" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     
     <dynamicField name="relation_type_object_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
     <dynamicField name="relation_type_object_type_object_*" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
