@@ -95,6 +95,7 @@
 
   <!-- The default high-performance update handler -->
   <updateHandler class="solr.DirectUpdateHandler2">
+    <!-- Disable for bulk load -->
     <updateLog/>
   </updateHandler>
 
@@ -405,4 +406,8 @@
     <defaultQuery>*:*</defaultQuery>
   </admin>
 
+  <autoSoftCommit> 
+    <maxTime>600000</maxTime> 
+  </autoSoftCommit>
+  
 </config>
