@@ -2,7 +2,7 @@
 <config>
   <abortOnConfigurationError>${solr.abortOnConfigurationError:true}</abortOnConfigurationError>
   <luceneMatchVersion>LUCENE_CURRENT</luceneMatchVersion>
-  <directoryFactory name="DirectoryFactory" class="solr.MMapDirectoryFactory"/>
+  <directoryFactory name="DirectoryFactory" class="solr.NRTCachingDirectoryFactory"/>
 
   <schemaFactory class="ClassicIndexSchemaFactory"/>
 
