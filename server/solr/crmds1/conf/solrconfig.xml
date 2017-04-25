@@ -220,6 +220,8 @@
       -->
     <maxWarmingSearchers>2</maxWarmingSearchers>
 
+    <slowQueryThresholdMillis>10000</slowQueryThresholdMillis>
+
   </query>
 
 
