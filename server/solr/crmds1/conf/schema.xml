@@ -48,6 +48,9 @@
     <!-- Update log versioning -->
     <field name="_version_" type="long" indexed="true" stored="true" required="true"/>
 
+    <!-- Field for boolean filter checks -->
+    <field name="field_names" type="string" indexed="true" stored="false" required="false" multiValued="true"/>
+
     <!-- Fields for matching identifiers -->
     <field name="doi" type="string" indexed="true" stored="true" required="true" multiValued="false" docValues="true"/>
     <field name="issn" type="string" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
