@@ -143,7 +143,7 @@
     <field name="hl_funder_name" type="stringTokens" indexed="true" stored="true" multiValued="true" required="false"/>
     <field name="hl_description" type="stringTokens" indexed="true" stored="true" multiValued="false" required="false"/>
     <field name="hl_publisher" type="stringTokens" indexed="true" stored="true" multiValued="false" required="false"/>
-    <field name="hl_affiliation" type="stringTokens" indexed="true" stored="true" multiValued="false" required="false"/>
+    <field name="hl_affiliation" type="stringTokens" indexed="true" stored="true" multiValued="true" required="false"/>
 
     <!-- Conference event -->
     <field name="event_name" type="stringTokens" indexed="true" stored="true" required="false"/>
