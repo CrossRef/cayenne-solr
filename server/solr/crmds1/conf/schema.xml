@@ -120,6 +120,8 @@
     <field name="assertion_name" type="string" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
     <field name="assertion_group_name" type="string" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
 
+    <field name="degree" type="string" indexed="false" stored="true" required="false" multiValued="true" docValues="true"/>
+
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_short_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
@@ -255,6 +257,10 @@
     <field name="content_created_year" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="content_created_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="content_created_day" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+
+    <field name="approval_year" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    <field name="approval_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    <field name="approval_day" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
 
     <field name="domain_exclusive" type="boolean" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="domains" type="string" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
