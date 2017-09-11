@@ -257,6 +257,10 @@
     <field name="content_created_year" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="content_created_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="content_created_day" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    
+    <field name="content_updated_year" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    <field name="content_updated_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    <field name="content_updated_day" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
 
     <field name="approved_year" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="approved_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
