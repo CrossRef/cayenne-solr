@@ -258,9 +258,9 @@
     <field name="content_created_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="content_created_day" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
 
-    <field name="approval_year" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
-    <field name="approval_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
-    <field name="approval_day" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    <field name="approved_year" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    <field name="approved_month" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
+    <field name="approved_day" type="integer" indexed="true" stored="true" required="false" docValues="true"/>
 
     <field name="domain_exclusive" type="boolean" indexed="true" stored="true" required="false" docValues="true"/>
     <field name="domains" type="string" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
