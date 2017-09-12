@@ -120,9 +120,9 @@
     <field name="assertion_name" type="string" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
     <field name="assertion_group_name" type="string" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
 
-    <field name="degree" type="string" indexed="false" stored="true" required="false" multiValued="true" docValues="true"/>
-    <field name="standards_body_name" type="string" indexed="true" stored="true" required="false" multiValued="false" docValues="true"/>
-    <field name="standards_body_acronym" type="string" indexed="true" stored="true" required="false" multiValued="false" docValues="true"/>
+    <field name="degree" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true" docValues="true"/>
+    <field name="standards_body_name" type="stringTokens" indexed="true" stored="true" required="false" multiValued="false" docValues="true"/>
+    <field name="standards_body_acronym" type="stringTokens" indexed="true" stored="true" required="false" multiValued="false" docValues="true"/>
 
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
