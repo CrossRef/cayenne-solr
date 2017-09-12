@@ -124,6 +124,10 @@
     <field name="standards_body_name" type="stringTokens" indexed="true" stored="true" required="false" multiValued="false" docValues="true"/>
     <field name="standards_body_acronym" type="stringTokens" indexed="true" stored="true" required="false" multiValued="false" docValues="true"/>
 
+    <field name="edition_number" type="string" indexed="true" stored="true" required="false" miltiValied="false" docValues="true"/>
+    <field name="part_number" type="string" indexed="true" stored="true" required="false" miltiValied="false" docValues="true"/>
+    <field name="component_number" type="string" indexed="true" stored="true" required="false" miltiValied="false" docValues="true"/>
+
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_short_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
