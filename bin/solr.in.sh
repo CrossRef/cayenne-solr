@@ -28,7 +28,7 @@
 #SOLR_STOP_WAIT="180"
 
 # Increase Java Heap as needed to support your indexing / query needs
-SOLR_HEAP="18g"
+SOLR_HEAP="16g"
 
 # Expert: If you want finer control over memory options, specify them directly
 # Comment out SOLR_HEAP if you are using this though, that takes precedence
