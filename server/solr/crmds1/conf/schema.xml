@@ -24,7 +24,7 @@
       </analyzer>
     </fieldType>
 
-    <fieldType name="stringTokens" class="solr.TextField" sortMissingLast="true" docValues="true">
+    <fieldType name="stringTokens" class="solr.TextField" sortMissingLast="true" docValues="false">
       <analyzer type="index">
         <tokenizer class="solr.StandardTokenizerFactory"/>
 	<filter class="solr.LowerCaseFilterFactory"/>
