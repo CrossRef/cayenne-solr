@@ -1504,7 +1504,7 @@ if [ "$GC_LOG_OPTS" != "" ]; then
   if [ "$JAVA_VENDOR" == "IBM J9" ]; then
     gc_log_flag="-Xverbosegclog"
   fi
-  GC_LOG_OPTS+=("$gc_log_flag:$SOLR_LOGS_DIR/solr_gc.log" -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=9 -XX:GCLogFileSize=20M)
+  GC_LOG_OPTS+=("$gc_log_flag:$SOLR_LOGS_DIR/solr_gc-%t.log" -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=9 -XX:GCLogFileSize=20M)
 fi
 
 # If ZK_HOST is defined, the assume SolrCloud mode

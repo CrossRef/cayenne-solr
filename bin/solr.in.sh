@@ -35,8 +35,9 @@ SOLR_HEAP="16g"
 #SOLR_JAVA_MEM="-Xms512m -Xmx512m"
 
 # Enable verbose GC logging
-#GC_LOG_OPTS="-verbose:gc -XX:+PrintHeapAtGC -XX:+PrintGCDetails \
-#-XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:+PrintGCApplicationStoppedTime"
+GC_LOG_OPTS="-verbose:gc -XX:+PrintHeapAtGC -XX:+PrintGCDetails \
+-XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:+PrintGCApplicationStoppedTime \
+-XX:+PrintAdaptiveSizePolicy"
 
 # These GC settings have shown to work well for a number of common Solr workloads
 GC_TUNE="-XX:+UseG1GC -XX:+PerfDisableSharedMem -XX:+ParallelRefProcEnabled -XX:G1HeapRegionSize=8m -XX:MaxGCPauseMillis=250 -XX:InitiatingHeapOccupancyPercent=75"
@@ -59,7 +60,7 @@ GC_TUNE="-XX:+UseG1GC -XX:+PerfDisableSharedMem -XX:+ParallelRefProcEnabled -XX:
 # Set to true to activate the JMX RMI connector to allow remote JMX client applications
 # to monitor the JVM hosting Solr; set to "false" to disable that behavior
 # (false is recommended in production environments)
-#ENABLE_REMOTE_JMX_OPTS="false"
+ENABLE_REMOTE_JMX_OPTS="true"
 
 # The script will use SOLR_PORT+10000 for the RMI_PORT or you can set it here
 # RMI_PORT=18983
@@ -70,7 +71,7 @@ GC_TUNE="-XX:+UseG1GC -XX:+PerfDisableSharedMem -XX:+ParallelRefProcEnabled -XX:
 #SOLR_OPTS="$SOLR_OPTS -Dsolr.autoSoftCommit.maxTime=3000"
 #SOLR_OPTS="$SOLR_OPTS -Dsolr.autoCommit.maxTime=60000"
 #SOLR_OPTS="$SOLR_OPTS -Dsolr.clustering.enabled=true"
-SOLR_OPTS="$SOLR_OPTS -XX:+HeapDumpOnOutOfMemoryError"
+SOLR_OPTS="$SOLR_OPTS"
 
 # Location where the bin/solr script will save PID files for running instances
 # If not set, the script will create PID files in $SOLR_TIP/bin
