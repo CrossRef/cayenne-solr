@@ -302,6 +302,22 @@
     
     <field name="citation_doi" type="string" indexed="true" stored="true" required="false" multiValued="true" />
     <field name="citation_key_doi" type="string" indexed="false" stored="true" required="false" multiValued="true" />
+
+    <!-- peer review -->
+    <field name="peer_review_running_number" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+    <field name="peer_review_revision_round" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+    <field name="peer_review_stage" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+    <field name="peer_review_recommendation" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+    <field name="peer_review_type" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+    <field name="peer_review_competing_interest_statement" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+    <field name="peer_review_language" type="string" indexed="false" stored="true" required="false" multiValued="false"/>
+
+    <!-- institution -->
+    <field name="institution_name" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="institution_acronym" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="institution_location" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+    <field name="institution_department" type="string" indexed="false" stored="true" required="false" multiValued="true"/>
+
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
