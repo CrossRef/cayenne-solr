@@ -71,6 +71,7 @@
     <field name="contributor_orcid" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_orcid_authed" type="boolean" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="contributor_type" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
+    <field name="contributor_sequence" type="string" indexed="true" stored="true" required="false" multiValued="true"/>
 
     <!-- Structured update information -->
     <field name="update_policy" type="string" indexed="true" stored="true" required="false" multiValued="false" />
