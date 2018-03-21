@@ -328,6 +328,7 @@
     <field name="free_to_read_end_month" type="integer" indexed="true" stored="true" required="false"/>
     <field name="free_to_read_end_day" type="integer" indexed="true" stored="true" required="false"/>
 
+    <field name="language" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
