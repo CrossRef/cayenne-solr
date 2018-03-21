@@ -329,6 +329,15 @@
     <field name="free_to_read_end_day" type="integer" indexed="true" stored="true" required="false"/>
 
     <field name="language" type="string" indexed="true" stored="true" required="false" multiValued="false"/>
+
+    <!-- journal issue -->
+    <field name="issue_online_year" type="integer" indexed="true" stored="true" required="false" />
+    <field name="issue_online_month" type="integer" indexed="true" stored="true" required="false" />
+    <field name="issue_online_day" type="integer" indexed="true" stored="true" required="false" />
+
+    <field name="issue_print_year" type="integer" indexed="true" stored="true" required="false" />
+    <field name="issue_print_month" type="integer" indexed="true" stored="true" required="false" />
+    <field name="issue_print_day" type="integer" indexed="true" stored="true" required="false" />
   </fields>
 
   <defaultSearchField>content</defaultSearchField>
