@@ -260,6 +260,8 @@
     <field name="accepted_year" type="integer" indexed="true" stored="true" required="false" />
     <field name="accepted_month" type="integer" indexed="true" stored="true" required="false" />
     <field name="accepted_day" type="integer" indexed="true" stored="true" required="false" />
+
+    <field name="content_type" type="string" indexed="true" stored="true" required="false" />
     
     <field name="content_created_year" type="integer" indexed="true" stored="true" required="false" />
     <field name="content_created_month" type="integer" indexed="true" stored="true" required="false" />
