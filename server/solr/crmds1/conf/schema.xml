@@ -131,7 +131,6 @@
 
     <!-- Stored fields for highlighting -->
     <field name="hl_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
-    <field name="hl_title_xml" type="stringTokens" indexed="false" stored="true" required="false" multiValued="true"/>
     <field name="hl_short_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_original_title" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
     <field name="hl_subtitle" type="stringTokens" indexed="true" stored="true" required="false" multiValued="true"/>
